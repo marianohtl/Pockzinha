@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "twjeq5nIkIbRnW28e4PNll+mSHXPiJhqx+Xwff24XmtuUu9ZTVeyp6T3Z2nbQueb611Sa6u+Bcvww//fILd5pA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Momoh\\source\\repos\\Poczinha02\\Poczinha02\\Poczinha02\\Poczinha02.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Momoh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Momoh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Momoh\\.nuget\\packages\\plugin.audiorecorder\\1.1.0\\plugin.audiorecorder.1.1.0.nupkg.sha512",
+    "C:\\Users\\Momoh\\.nuget\\packages\\plugin.mediamanager\\0.5.3\\plugin.mediamanager.0.5.3.nupkg.sha512",
+    "C:\\Users\\Momoh\\.nuget\\packages\\plugin.mediamanager.forms\\0.5.3\\plugin.mediamanager.forms.0.5.3.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}
