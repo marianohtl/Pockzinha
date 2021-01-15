@@ -3,28 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+	xmlns:poczinha02="clr-namespace:Poczinha02"
+	mc:Ignorable="d"
              x:Class="Poczinha02.MainPage">
+	<ContentPage.BindingContext>
+		<poczinha02:MainViewModel
+			x:Name="vm" />
+	</ContentPage.BindingContext>
 
-    <StackLayout>
-        
-        <Button Text="Record"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="ClickedRecord" />
-        
-        <Button Text="Stop"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="ClickedStopRecord" />
-        
-        <Button Text="Play"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="ClickedPlay" 
-                x:Name="ReproduzirButton"/>
+	<ContentPage.Content>
+
+		<StackLayout 
+			Spacing="40">
+
+			<Button
+				Command="{Binding RecordCommand}"
+				VerticalOptions="EndAndExpand"
+				Text="Gravar">
+				<Button.Triggers>
+					<DataTrigger
+						TargetType="Button"
+						Binding="{Binding IsRecording}"
+						Value="true">
+						<Setter
+							Property="Text"
+							Value="Parar gravação" />
+					</DataTrigger>
+				</Button.Triggers>
+			</Button>
 
 
-    </StackLayout>
+			<Button
+				VerticalOptions="StartAndExpand"
+				Command="{Binding PlayCommand}"
+				Text="Play">
+				<Button.Triggers>
+					<DataTrigger
+						TargetType="Button"
+						Binding="{Binding IsPlaying}"
+						Value="true">
+						<Setter
+							Property="Text"
+							Value="Pausar" />
+					</DataTrigger>
+				</Button.Triggers>
+			</Button>
 
+
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>
